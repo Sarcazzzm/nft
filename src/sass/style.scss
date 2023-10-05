@@ -1,9 +1,9 @@
 @import 'libs/bootstrap-reboot.min';
 @import 'libs/stylesheet';
+@import 'libs/slick';
 
 *{
     font-family: Poppins,sans-serif;
-    
 }
 
 .container{
@@ -14,3 +14,4 @@
 
 @import 'blocks/header';
 @import 'blocks/main';
+@import 'blocks/slider';

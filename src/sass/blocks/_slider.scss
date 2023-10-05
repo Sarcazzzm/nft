@@ -1,0 +1,120 @@
+.slider{
+    height: 873px;
+    background: #F1F1F1;
+    padding-top: 70px;
+    
+    h2{
+        text-align: center;
+        font-weight: 600;
+        color: #c5c5c5;
+        font-size: 45px;
+        margin: 0 0 100px 0;
+    }
+    &__item{
+        position: relative;
+        margin: 0 20px 0 20px;
+        width: 281px;
+        height: 402px;
+        border-radius: 24px;
+        background: #ffffff;
+        padding: 14px 14px 20px 14px;
+    
+        &_img{
+            .slider_timer{
+                position: absolute;
+                width: 116px;
+                height: 38px;
+                border-radius: 10px;
+                background: rgb(28, 29, 32,.3);
+                right: 23px;
+                top: 28px;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                color: #ffffff;
+                font-size: 14px;
+                font-weight: 500;
+            }
+            .slider_image{
+                height: 253px;
+                width: 100%;
+            }
+        }
+        .slider_header{
+            font-size: 21px;
+            font-weight: 600;
+            color: #141416;
+            margin-top: 18px;
+        }
+        .slider_footer{
+            display: flex;
+            justify-content: space-between;
+            margin-top: 14px;
+            &_subheader{
+                font-weight: 400;
+                font-size: 14px;
+                color: #94A3B8;
+            }
+            &_price{
+                position: relative;
+                font-size: 16px;
+                font-weight: 500;
+                color: #141416;
+                margin-left: 24px;
+                margin-top: 5px;
+                &::before{
+                    content:'';
+                    background: url(../../icons/Vector.svg);
+                    position: absolute;
+                    width: 11px;
+                    height: 18px;
+                    left: -24px;
+                }
+            }
+            .place_bid{
+                width: 122px;
+                height: 52px;
+                border-radius:12px;
+                font-size: 14px;
+            }
+        }
+    }
+    .slider_arrows{
+        position: relative;
+        display: flex;
+        justify-content: center;
+        margin-top: 115px;
+        &::before{
+            content:'';
+            position: absolute;
+            width: 2px;
+            height: 26px;
+            background: #E6E8EC;
+            top: 21px;
+        }
+        #prev{
+            border: none;
+            border-radius: 18px 0 0 18px;
+            /* border-right: 1px solid #E6E8EC; */
+            width: 82px;
+            height: 68px;
+            background: #ffffff;
+            transition: 0.5s all;
+            &:active{
+                background: #d0d0d0;
+            }
+        }
+        #next{
+            border:none;
+            border-radius: 0 18px 18px 0;
+            /* border-left: 1px solid #E6E8EC; */
+            width: 82px;
+            height: 69px;
+            background: #ffffff;
+            transition: 0.5s all;
+            &:active{
+                background: #d0d0d0;
+            }
+        }
+    }
+}
