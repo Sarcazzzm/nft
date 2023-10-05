@@ -1,0 +1,14 @@
+@import 'libs/bootstrap-reboot.min';
+@import 'libs/stylesheet';
+
+*{
+    font-family: Poppins,sans-serif;
+}
+
+.container{
+    max-width: 1250px;
+    margin: 0 auto;
+}
+
+
+@import 'blocks/header'
