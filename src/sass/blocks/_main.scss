@@ -52,7 +52,7 @@
     }
     .stats{
         display: flex;
-        width: 453px;
+        min-width: 453px;
         justify-content: space-between;
         &__wrapper{
             .stats_numbers{

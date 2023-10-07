@@ -9,9 +9,11 @@
 .container{
     width: 1250px;
     margin: 0 auto;
+    position: relative;
 }
 
 
 @import 'blocks/header';
 @import 'blocks/main';
 @import 'blocks/slider';
+@import 'blocks/pop'

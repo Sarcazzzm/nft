@@ -9,15 +9,28 @@
     }
     &__logo{
         margin-right: 57px;
+        transition: 0.3s all;
+        &:hover{
+            transform: scale(1.05);
+        }
+        &:active{
+            transform: scale(0.9);
+        }
     }
     &__menu{
-        width: 446px;
+        min-width: 446px;
         display: flex;
         list-style-type: none;
         justify-content: space-between;
         padding: 0;
         margin-bottom: 0;
         margin-right: 117px;
+        li{
+            margin-right: 53px;
+            &:nth-child(4){
+                margin-right: 0px;
+            }
+        }
         a{
             font-size: 18px;
             font-family: Inter,sans-serif;
@@ -26,6 +39,7 @@
             color: #606060;
             text-transform: uppercase;
             transition: 0.3s all;
+            
             &:hover{
                 color:#141416;
             }

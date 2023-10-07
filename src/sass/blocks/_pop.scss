@@ -1,0 +1,165 @@
+.pop{
+    height: 1130px;
+    padding-top: 236px;
+    background: #f9f9f9;
+    &__block{
+        position: absolute;
+        width: 365px;
+        height: 246px;
+        border-radius:20px;
+        background: #ffffff;
+        padding: 26px 24px 27px 27px;
+        top:-365px;
+        right: 20px;
+        &_header{
+            display: flex;
+            justify-content: space-between;
+            align-items:flex-start;
+            .block_header{
+                font-size: 21px;
+                letter-spacing: 0.2px;
+                margin-bottom: 34px;
+            }
+            .block_btn{
+                display: flex;
+                justify-content: center;
+                align-items:center;
+                background:transparent;
+                border:none;
+                height: 25px;
+                width: 30px;
+                padding-right: 0px;
+            }
+        }
+        &_subheader{
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            margin-bottom: 33px;
+            .pop__subheader_users{
+                display: flex;
+                .pop__subheader_img{
+                    margin-right: 15px;
+                    position: relative;
+                    .block_img{
+                        height: 45px;
+                        border-radius:100%;
+                    }
+                    .block_circle{
+                        position: absolute;
+                        display: flex;
+                        width: 21px;
+                        height: 21px;
+                        background:#ffffff;
+                        border-radius:100%;
+                        font-size: 11px;
+                        color:#141416;
+                        font-weight: 700;
+                        align-items:center;
+                        justify-content: center;
+                        top:30px;
+                        left: 30px;
+                    }
+                }
+                .pop__categories_item.block{
+                    display: flex;
+                    flex-direction: column;
+                    .pop_name{
+                        font-size: 15px;
+                        font-weight: 500;
+                        margin-bottom: 7px;
+                    }
+                    .pop_dev{
+                        font-size: 12px;
+                        font-weight: 400;
+                        color:#64748B;
+                    }
+                }
+            }
+            .pop__subheader_price.block{
+                .pop__categories_item.weight{
+                    font-size: 15px;
+                    justify-content: flex-end;
+                    &::before{
+                        transform: scale(0.8);
+                        left: -5px;
+                        top: 1px;
+                    }
+                }
+                .pop__categories_item.green{
+                    font-size: 13px;
+                }
+                #red_pop{
+                    color:#E23333;
+                }
+            }
+        }
+    }
+    h2{
+        text-align: center;
+        font-weight: 600;
+        font-size: 45px;
+        color:#141416;
+    }
+    &__wrapper{
+        margin-top: 90px;
+    }
+    &__list{
+        display: grid;
+        grid-template-columns: 455px 1fr 1fr 1fr 1fr 1fr;
+        color:#93989A;
+        font-weight: 400;
+        font-size: 22px;
+        letter-spacing: 1%;
+        text-align: left;
+    }
+    &__categories{
+        margin-top: 20px;
+        display: grid;
+        grid-template-columns: 455px 1fr 1fr 1fr 1fr 1fr;
+        grid-template-rows: 141px;
+        &_item{
+            display: flex;
+            align-self: center;
+            font-weight: 500;
+            font-size: 24px;
+            color:#010101;
+            
+            .pop_img{
+                height: 80px;
+                border-radius: 100%;
+                border: 3px solid #fff;
+                align-self: center;
+            }
+            .pop__categories_names{
+                margin-left: 24px;
+                .pop_name{
+                    font-weight: 500;
+                    font-size: 28px;
+                    color:#141416;
+                }
+                .pop_dev{
+                    font-weight: 400;
+                    font-size: 23px;
+                    color:#64748B;
+                }
+            }
+        }
+        &_item.green{
+            color: #10C352;
+        }
+        &_item.weight{
+            position: relative;
+            font-weight: 600;
+            &::before{
+                content:'';
+                background: url(../../icons/Vector.svg);
+                position: absolute;
+                width: 12px;
+                height: 19px;
+                left: -20px;
+                top: 7px;
+            }
+        }
+    }
+}
